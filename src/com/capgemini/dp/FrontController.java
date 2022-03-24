@@ -36,7 +36,7 @@ class FrontController {
     }
 
     private boolean isAuthenticUser(){
-        System.out.println("User is authenticated successfully.");
+        System.out.println("User is authenticated successfully. Hello");
         return true;
     }
 
