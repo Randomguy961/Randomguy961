@@ -28,7 +28,7 @@ public class SubStringPlaindrome {
     public static void main(String[] args) {
         SubStringPlaindrome s = new SubStringPlaindrome();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a String:");
+        System.out.println("Enter hello String:");
         String str = sc.nextLine();
         System.out.println("The number of substring palindromes are:"+s.subString(str));
     }

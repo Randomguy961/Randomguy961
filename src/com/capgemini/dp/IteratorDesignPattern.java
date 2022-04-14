@@ -15,7 +15,9 @@ class NameRepository implements Container {
     public MyIterator getIterator() {
         return new NameIterator();
     }
+    public void c(){
 
+    }
     private class NameIterator implements MyIterator {
 
         int index;

@@ -29,7 +29,7 @@ class Dispatcher {
 }
 class FrontController {
 
-    private Dispatcher dispatcher;
+    private final Dispatcher dispatcher;
 
         public FrontController(){
         dispatcher = new Dispatcher();

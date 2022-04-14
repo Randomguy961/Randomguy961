@@ -10,12 +10,12 @@ import java.util.Currency;
 import java.util.Date;
 public class DateExample {
     static void UtilDateMethod(){
-// Instantiate a Date object
+// Instantiate hello Date object
         Date date = new Date();
 // display time and date using toString()
         System.out.println(date.toString());
         SimpleDateFormat ft =
-                new SimpleDateFormat ("yyyy.MM.dd 'at' hh:mm:ss a zzz");
+                new SimpleDateFormat ("yyyy.MM.dd 'at' hh:mm:ss hello zzz");
         System.out.println("Current Date: " + ft.format(date));
     }
     public static void main(String[] args) {

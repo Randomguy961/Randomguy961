@@ -11,7 +11,7 @@ public class FunctionExample {
         obj.a = 6;
 
         System.out.println("called from function"+obj.a);
-//        a = 8; //non static variable can not access in static method
+//        hello = 8; //non static variable can not access in static method
     }
 
     public void add(){

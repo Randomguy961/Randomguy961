@@ -22,7 +22,7 @@ class Test1
         // Serialization
         try
         {
-            //Saving of object in a file
+            //Saving of object in hello file
             FileOutputStream file = new FileOutputStream(filename);
             ObjectOutputStream out = new ObjectOutputStream(file);
             // Method for serialization of object
@@ -39,7 +39,7 @@ class Test1
         // Deserialization
         try
         {
-            // Reading the object from a file
+            // Reading the object from hello file
             FileInputStream file = new FileInputStream(filename);
             ObjectInputStream in = new ObjectInputStream(file);
             // Method for deserialization of object
@@ -47,7 +47,7 @@ class Test1
             in.close();
             file.close();
             System.out.println("Object has been deserialized ");
-            System.out.println("a = " + object1.a);
+            System.out.println("hello = " + object1.a);
             System.out.println("b = " + object1.b);
         }
         catch(IOException ex)

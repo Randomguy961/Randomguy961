@@ -18,23 +18,23 @@ public class RegexExample {
 
         System.out.println(b+" "+b2+" "+b3);
         System.out.println("? quantifier ....");
-        System.out.println(Pattern.matches("[amn]?", "a"));//true (a or m or n comes one time)
-        System.out.println(Pattern.matches("[amn]?", "aaa"));//false (a comes more than one time)
-        System.out.println(Pattern.matches("[amn]?", "aammmnn"));//false (a m and n comes more than one time)
-        System.out.println(Pattern.matches("[amn]?", "aazzta"));//false (a comes more than one time)
-        System.out.println(Pattern.matches("[amn]*", "annmmmmmmm"));//true (a or m or n may come zero or more times)
-        System.out.println(Pattern.matches("[amn]?", "am"));//false (a or m or n must come one time)
+        System.out.println(Pattern.matches("[amn]?", "hello"));//true (hello or m or n comes one time)
+        System.out.println(Pattern.matches("[amn]?", "aaa"));//false (hello comes more than one time)
+        System.out.println(Pattern.matches("[amn]?", "aammmnn"));//false (hello m and n comes more than one time)
+        System.out.println(Pattern.matches("[amn]?", "aazzta"));//false (hello comes more than one time)
+        System.out.println(Pattern.matches("[amn]*", "annmmmmmmm"));//true (hello or m or n may come zero or more times)
+        System.out.println(Pattern.matches("[amn]?", "am"));//false (hello or m or n must come one time)
 
         System.out.println("+ quantifier ....");
-        System.out.println(Pattern.matches("[amn]+", "a"));//true (a or m or n once or more times)
-        System.out.println(Pattern.matches("[amn]+", "aaa"));//true (a comes more than one time)
-        System.out.println(Pattern.matches("[amn]+", "aammmnn"));//true (a or m or n comes more than once)
+        System.out.println(Pattern.matches("[amn]+", "hello"));//true (hello or m or n once or more times)
+        System.out.println(Pattern.matches("[amn]+", "aaa"));//true (hello comes more than one time)
+        System.out.println(Pattern.matches("[amn]+", "aammmnn"));//true (hello or m or n comes more than once)
         System.out.println(Pattern.matches("[amn]+", "aazzta"));//false (z and t are not matching pattern)
 
         System.out.println("* quantifier ....");
-        System.out.println(Pattern.matches("[amn]*", "ammmna"));//true (a or m or n may come zero or more times)
-        System.out.println(Pattern.matches("[amn]*", ""));//true (a or m or n may come zero or more times)
-        System.out.println(Pattern.matches("[amn]*", "annz"));//true (a or m or n may come zero or more times)
+        System.out.println(Pattern.matches("[amn]*", "ammmna"));//true (hello or m or n may come zero or more times)
+        System.out.println(Pattern.matches("[amn]*", ""));//true (hello or m or n may come zero or more times)
+        System.out.println(Pattern.matches("[amn]*", "annz"));//true (hello or m or n may come zero or more times)
 
         System.out.println("===================length pattern===============");
         System.out.println(Pattern.matches("[a-zA-Z0-9]{6}", "arun32"));//true
